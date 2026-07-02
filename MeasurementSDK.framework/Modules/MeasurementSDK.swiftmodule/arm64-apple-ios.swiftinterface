@@ -1,0 +1,1223 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios14 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeasurementSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import CoreImage
+import CoreMedia
+import CoreMotion
+import CoreVideo
+import Foundation
+@_exported import MeasurementSDK
+import MediaPipeTasksVision
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class XYLogConfig : ObjectiveC.NSObject {
+  @objc public static var enableLog: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public func print(_ item: @autoclosure () -> Any, separator: Swift.String = " ", terminator: Swift.String = "\n")
+public func XYLog<T>(_ message: T, file: Swift.String = #file, funcName: Swift.String = #function, lineNum: Swift.Int = #line)
+@objc public enum RecognitionType : Swift.Int {
+  case MNN = 0
+  case MEDIAPIPE = 1
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc open class EnvironmentManager : ObjectiveC.NSObject {
+  @objc public static var authURL: Swift.String {
+    @objc get
+  }
+  public static var tokenURL: Swift.String {
+    get
+  }
+  public static var baseURL: Swift.String {
+    get
+  }
+  public static var socketURL: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func configureApp(measurementURL: Swift.String?, authURL: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func configureRemote(measurementURL: Swift.String?, authURL: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func configureRemote(from config: MeasurementSDK.ClientSdkConfig?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func configure(measurementURL: Swift.String?, authURL: Swift.String?, remoteMeasurementURL: Swift.String?, remoteAuthURL: Swift.String?)
+  #endif
+  @objc public static func setCustomEnvironment(measurementURL: Swift.String, authURL: Swift.String)
+  @objc public static func resetCustomEnvironment()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Environment : Swift.Int {
+  case dev = 0
+  case prod = 1
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum GDHTTPMethod : Swift.String {
+  case GET
+  case POST
+  case PUT
+  case DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol GDTargetType {
+  var path: MeasurementSDK.Path { get }
+  var method: MeasurementSDK.GDHTTPMethod { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var headers: [Swift.String : Swift.String]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var parameters: [Swift.String : Any]? { get }
+  #endif
+}
+extension MeasurementSDK.GDTargetType {
+  public var fullURL: Swift.String {
+    get
+  }
+}
+public enum ItemsType : MeasurementSDK.GDTargetType {
+  case getToken(header: [Swift.String : Swift.String]? = nil, param: [Swift.String : Any]? = nil)
+  case refresh(header: [Swift.String : Swift.String]? = nil, param: [Swift.String : Any]? = nil)
+  case getLicense(header: [Swift.String : Swift.String]? = nil)
+  case getSettings(header: [Swift.String : Swift.String]? = nil)
+  case uploadFeature(header: [Swift.String : Swift.String]? = nil, param: [Swift.String : Any]? = nil)
+  case getProfile(header: [Swift.String : Swift.String]? = nil, param: [Swift.String : Any]? = nil)
+  public var path: MeasurementSDK.Path {
+    get
+  }
+  public var method: MeasurementSDK.GDHTTPMethod {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var headers: [Swift.String : Swift.String]? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var parameters: [Swift.String : Any]? {
+    get
+  }
+  #endif
+}
+public enum Path : Swift.String {
+  case sdkConfig
+  case auth
+  case refreshToken
+  case license
+  case settings
+  case uploadFeature
+  case getProfile
+  public func fullURL() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func asURL() -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Frame {
+  public var buffer: CoreMedia.CMSampleBuffer
+  public var time: Swift.CLong
+  public var streamTimestamp: Swift.CLong
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var faceValid: Swift.Bool
+  public var rect: [Swift.Float]
+  public var points: Swift.UnsafeMutablePointer<CoreFoundation.CGPoint>
+}
+public struct FrameData {
+}
+public struct DataBean : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct License : Swift.Codable {
+  public let code: Swift.Int?
+  public let errorMessage: Swift.String?
+  public let data: MeasurementSDK.DataBean?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public let image_maxSize: Swift.Int
+@objc @_hasMissingDesignatedInitializers @objcMembers open class MeasurementError : ObjectiveC.NSObject, Swift.Decodable {
+  @objc public var code: Swift.Int
+  @objc public var message: Swift.String
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum MeasurementExceptionEnum : Swift.Int, Swift.CustomStringConvertible {
+  case invalidConfiguration
+  case authenticationError
+  case hasNoFace
+  case faceShaking
+  case hasNoMeasurementReport
+  case unknownException
+  case faceDisorientation
+  case failedToGetLicense
+  case faceUnevenLight
+  case faceHyperthyroidism
+  case fpsTooLow
+  case faceOutRange
+  case networkDisconnected
+  case networkTimeOut
+  case faceTooClose
+  case measurementInvalidConfiguration
+  public var description: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct MeasurementRequiredData : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CreateMeasurementModel : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ChunkData : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @objcMembers public class MeasureResult : Swift.Codable {
+  @objc public func toString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public struct TokenModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class Authentication {
+  public static let shared: MeasurementSDK.Authentication
+  public var token: Swift.String? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func configure(appId: Swift.String, sdkKey: Swift.String, server: Swift.String? = nil, serviceType: Swift.String? = nil)
+  #endif
+  public func getToken(response: @escaping (_ tokenModel: MeasurementSDK.TokenModel, _ measurementError: MeasurementSDK.MeasurementError) -> Swift.Void)
+  public func authenticate(response: @escaping (_ tokenModel: MeasurementSDK.TokenModel, _ measurementError: MeasurementSDK.MeasurementError) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RpcTimeoutHandler {
+  @objc deinit
+}
+public class ThreadPoolManager {
+  public init(corePoolSize: Swift.Int = 5, maxPoolSize: Swift.Int = 20)
+  public var executor: Foundation.OperationQueue {
+    get
+  }
+  public func execute(task: @escaping () -> Swift.Void)
+  public func shutdown()
+  public func shutdownNow()
+  @objc deinit
+}
+public struct DefaultConstants {
+  public static let lineWidth: CoreFoundation.CGFloat
+  public static let pointRadius: CoreFoundation.CGFloat
+  public static let pointColor: UIKit.UIColor
+  public static let pointFillColor: UIKit.UIColor
+  public static let faceOvalConnectionsColor: UIKit.UIColor
+  public static let rightEyebrowConnectionsColor: UIKit.UIColor
+  public static let leftEyebrowConnectionsColor: UIKit.UIColor
+  public static let rightEyeConnectionsColor: UIKit.UIColor
+  public static let leftEyeConnectionsColor: UIKit.UIColor
+  public static let lipsConnectionsColor: UIKit.UIColor
+  public static var numFaces: Swift.Int
+  public static var minFaceDetectionConfidence: Swift.Float
+  public static var minFacePresenceConfidence: Swift.Float
+  public static var minTrackingConfidence: Swift.Float
+  public static let delegate: MeasurementSDK.FaceLandmarkerDelegate
+}
+public enum FaceLandmarkerDelegate : Swift.CaseIterable {
+  case GPU
+  case CPU
+  public var name: Swift.String {
+    get
+  }
+  public var delegate: MediaPipeTasksVision.Delegate {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(name: Swift.String)
+  #endif
+  public static func == (a: MeasurementSDK.FaceLandmarkerDelegate, b: MeasurementSDK.FaceLandmarkerDelegate) -> Swift.Bool
+  public typealias AllCases = [MeasurementSDK.FaceLandmarkerDelegate]
+  nonisolated public static var allCases: [MeasurementSDK.FaceLandmarkerDelegate] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol FaceLandmarkerServiceLiveStreamDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func faceLandmarkerService(_ faceLandmarkerService: MeasurementSDK.FaceLandmarkerService, didFinishDetection result: MeasurementSDK.ResultBundle?, error: (any Swift.Error)?)
+  #endif
+}
+public protocol FaceLandmarkerServiceVideoDelegate : AnyObject {
+  func faceLandmarkerService(_ faceLandmarkerService: MeasurementSDK.FaceLandmarkerService, didFinishDetectionOnVideoFrame index: Swift.Int)
+  func faceLandmarkerService(_ faceLandmarkerService: MeasurementSDK.FaceLandmarkerService, willBeginDetection totalframeCount: Swift.Int)
+}
+@objc public class FaceLandmarkerService : ObjectiveC.NSObject {
+  weak public var liveStreamDelegate: (any MeasurementSDK.FaceLandmarkerServiceLiveStreamDelegate)?
+  weak public var videoDelegate: (any MeasurementSDK.FaceLandmarkerServiceVideoDelegate)?
+  public var faceLandmarker: MediaPipeTasksVision.FaceLandmarker?
+  public var runningMode: MediaPipeTasksVision.RunningMode
+  public var numFaces: Swift.Int
+  public var minFaceDetectionConfidence: Swift.Float
+  public var minFacePresenceConfidence: Swift.Float
+  public var minTrackingConfidence: Swift.Float
+  public var modelPath: Swift.String
+  public var delegate: MeasurementSDK.FaceLandmarkerDelegate
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(modelPath: Swift.String?, runningMode: MediaPipeTasksVision.RunningMode, numFaces: Swift.Int, minFaceDetectionConfidence: Swift.Float, minFacePresenceConfidence: Swift.Float, minTrackingConfidence: Swift.Float, delegate: MeasurementSDK.FaceLandmarkerDelegate)
+  #endif
+  public func createFaceLandmarker()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func videoFaceLandmarkerService(modelPath: Swift.String?, numFaces: Swift.Int, minFaceDetectionConfidence: Swift.Float, minFacePresenceConfidence: Swift.Float, minTrackingConfidence: Swift.Float, videoDelegate: (any MeasurementSDK.FaceLandmarkerServiceVideoDelegate)?, delegate: MeasurementSDK.FaceLandmarkerDelegate) -> MeasurementSDK.FaceLandmarkerService?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func liveStreamFaceLandmarkerService(modelPath: Swift.String?, numFaces: Swift.Int, minFaceDetectionConfidence: Swift.Float, minFacePresenceConfidence: Swift.Float, minTrackingConfidence: Swift.Float, liveStreamDelegate: (any MeasurementSDK.FaceLandmarkerServiceLiveStreamDelegate)?, delegate: MeasurementSDK.FaceLandmarkerDelegate) -> MeasurementSDK.FaceLandmarkerService?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func stillImageLandmarkerService(modelPath: Swift.String?, numFaces: Swift.Int, minFaceDetectionConfidence: Swift.Float, minFacePresenceConfidence: Swift.Float, minTrackingConfidence: Swift.Float, delegate: MeasurementSDK.FaceLandmarkerDelegate) -> MeasurementSDK.FaceLandmarkerService?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func detect(image: UIKit.UIImage) -> MeasurementSDK.ResultBundle?
+  #endif
+  public func detectAsync(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: UIKit.UIImage.Orientation, timeStamps: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func detect(videoAsset: AVFoundation.AVAsset, durationInMilliseconds: Swift.Double, inferenceIntervalInMilliseconds: Swift.Double, timeStamp: Swift.Double) async -> MeasurementSDK.ResultBundle?
+  #endif
+  public func imageGenerator(with videoAsset: AVFoundation.AVAsset) -> AVFoundation.AVAssetImageGenerator
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func detectFaceLandmarksInFramesGenerated(by assetGenerator: AVFoundation.AVAssetImageGenerator, totalFrameCount frameCount: Swift.Int, atIntervalsOf inferenceIntervalMs: Swift.Double) -> (faceLandmarkerResults: [MediaPipeTasksVision.FaceLandmarkerResult?], videoSize: CoreFoundation.CGSize)
+  #endif
+  @objc deinit
+}
+extension MeasurementSDK.FaceLandmarkerService : MediaPipeTasksVision.FaceLandmarkerLiveStreamDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func faceLandmarker(_ faceLandmarker: MediaPipeTasksVision.FaceLandmarker, didFinishDetection result: MediaPipeTasksVision.FaceLandmarkerResult?, timestampInMilliseconds: Swift.Int, error: (any Swift.Error)?)
+  #endif
+}
+public struct ResultBundle {
+  public let inferenceTime: Swift.Double
+  public let faceLandmarkerResults: [MediaPipeTasksVision.FaceLandmarkerResult?]
+  public var size: CoreFoundation.CGSize
+  public var timestamp: Swift.Int
+}
+@objc @_inheritsConvenienceInitializers public class InferenceConfigurationManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var modelPath: Swift.String? {
+    get
+    set
+  }
+  #endif
+  public var numFaces: Swift.Int {
+    get
+    set
+  }
+  public var minFaceDetectionConfidence: Swift.Float {
+    get
+    set
+  }
+  public var minFacePresenceConfidence: Swift.Float {
+    get
+    set
+  }
+  public var minTrackingConfidence: Swift.Float {
+    get
+    set
+  }
+  public var delegate: MeasurementSDK.FaceLandmarkerDelegate {
+    get
+    set
+  }
+  public static let sharedInstance: MeasurementSDK.InferenceConfigurationManager
+  public static let notificationName: Foundation.Notification.Name
+  public func postConfigChangedNotification()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class ResourceLoader {
+  public static let shared: MeasurementSDK.ResourceLoader
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func pathForResource(named fileName: Swift.String, withExtension fileExtension: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func readJSONFile(at filePath: Swift.String) -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func readDataFile(at filePath: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func readData(at filePath: Swift.String) -> Foundation.Data?
+  #endif
+  public func xy_bundle() -> Foundation.Bundle
+  @objc deinit
+}
+public typealias FaceDetectResultBlock = (_ isValid: Swift.Bool, _ code: Swift.Int, _ message: Swift.String) -> Swift.Void
+@_inheritsConvenienceInitializers @objc open class MMFaceDetector : ObjectiveC.NSObject {
+  @objc public static let shared: MeasurementSDK.MMFaceDetector
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func detectAsync(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: UIKit.UIImage.Orientation, timestamp: Swift.Int, guideFrame: CoreFoundation.CGRect, callback: MeasurementSDK.FaceDetectResultBlock?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func detectAsync(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: UIKit.UIImage.Orientation, timestamp: Swift.Int, guideFrame: CoreFoundation.CGRect, previewSize: CoreFoundation.CGSize, callback: MeasurementSDK.FaceDetectResultBlock?)
+  #endif
+  @objc deinit
+}
+extension MeasurementSDK.MMFaceDetector : MeasurementSDK.FaceLandmarkerServiceLiveStreamDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func faceLandmarkerService(_ faceLandmarkerService: MeasurementSDK.FaceLandmarkerService, didFinishDetection result: MeasurementSDK.ResultBundle?, error: (any Swift.Error)?)
+  #endif
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class MeasurementSDKVersion : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkFullVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class MeasurementRpc : ObjectiveC.NSObject, MeasurementSDK.HubConnectionDelegate {
+  public static let standard: MeasurementSDK.MeasurementRpc
+  public func connectionDidOpen(hubConnection: MeasurementSDK.HubConnection)
+  public func connectionDidFailToOpen(error: any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connectionDidClose(error: (any Swift.Error)?)
+  #endif
+  public func connectionWillReconnect(error: any Swift.Error)
+  public func connectionDidReconnect()
+  public func cancelAwaitingMeasurementResult()
+  public func clearMeasurementSession()
+  public func isConnected() -> Swift.Bool
+  public func stop()
+  public func start(_ createMeasurement: MeasurementSDK.CreateMeasurementModel)
+  public func push_physiology_chunk(_ chunk: Swift.String, _ chunkStatus: Swift.Int)
+  public func push_emotion_chunk(_ chunk: Swift.String, _ chunkStatus: Swift.Int)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol MeasurementProtocol : ObjectiveC.NSObjectProtocol {
+  @objc optional func onStarted(measurementId: Swift.String)
+  @objc optional func onStateUpdate(code: Swift.Int, message: Swift.String)
+  @objc optional func onInterrupted(reason: Swift.String)
+  @objc optional func onCollected()
+  @objc optional func onChunkReportGenerated(measurementId: Swift.String, hrReport: MeasurementSDK.HrReport)
+  @objc optional func onWholeReportGenerated(measurementId: Swift.String, report: MeasurementSDK.Report)
+  @objc optional func onCrashed(code: Swift.Int, message: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc open class MeasurementManager : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkFullVersion: Swift.String {
+    @objc get
+  }
+  @objc public var isMeasuring: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var isDetecting: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc weak public var measurementProtocol: (any MeasurementSDK.MeasurementProtocol)?
+  @objc override dynamic public init()
+  @objc public func setMeasurement(config: MeasurementSDK.MeasurementConfig)
+  @objc public func beginFaceGuidance()
+  @objc public func start()
+  @objc public func canStart() -> Swift.Bool
+  @objc public func enqueue(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: UIKit.UIImage.Orientation, guideRect: CoreFoundation.CGRect)
+  @objc public func enqueue(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: UIKit.UIImage.Orientation, guideRect: CoreFoundation.CGRect, previewSize: CoreFoundation.CGSize)
+  @objc public func stop()
+  @objc public func disconnectSignalR()
+  @objc public func interrupt()
+  public func stop(reason: Swift.String)
+  @objc deinit
+}
+extension MeasurementSDK.MeasurementManager : MeasurementSDK.FaceLandmarkerServiceLiveStreamDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func faceLandmarkerService(_ faceLandmarkerService: MeasurementSDK.FaceLandmarkerService, didFinishDetection result: MeasurementSDK.ResultBundle?, error: (any Swift.Error)?)
+  #endif
+}
+public protocol Connection {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any MeasurementSDK.ConnectionDelegate)? { get set }
+  #endif
+  var inherentKeepAlive: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var connectionId: Swift.String? { get }
+  #endif
+  func start()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func send(data: Foundation.Data, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func stop(stopError: (any Swift.Error)?)
+  #endif
+}
+public protocol ConnectionDelegate : AnyObject {
+  func connectionDidOpen(connection: any MeasurementSDK.Connection)
+  func connectionDidFailToOpen(error: any Swift.Error)
+  func connectionDidReceiveData(connection: any MeasurementSDK.Connection, data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func connectionDidClose(error: (any Swift.Error)?)
+  #endif
+  func connectionWillReconnect(error: any Swift.Error)
+  func connectionDidReconnect()
+}
+extension MeasurementSDK.ConnectionDelegate {
+  public func connectionWillReconnect(error: any Swift.Error)
+  public func connectionDidReconnect()
+}
+extension Foundation.Bundle {
+  public static func xy_bundle(_ bundelName: Swift.String, _ className: Swift.AnyClass) -> Foundation.Bundle
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class DataConversion : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var modelName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getUA: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getUUID: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getAppVersionName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getAppBuildCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getAppVersionCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getAppPackage: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getDisplayName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getDeviceVersionCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getSerialCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getChannel: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getOS: Swift.String {
+    get
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public var getBottomSafeAreaHeight: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var isIphoneX: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static func vg_safeDistanceTop() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_safeDistanceBottom() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_statusBarHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_navigationBarHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_navigationFullHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_tabBarHeight() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public static func vg_tabBarFullHeight() -> CoreFoundation.CGFloat
+}
+public protocol HttpClientProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func get(url: Foundation.URL, completionHandler: @escaping (MeasurementSDK.HttpResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func post(url: Foundation.URL, body: Foundation.Data?, completionHandler: @escaping (MeasurementSDK.HttpResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func delete(url: Foundation.URL, completionHandler: @escaping (MeasurementSDK.HttpResponse?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+}
+@_hasMissingDesignatedInitializers public class HttpConnection : MeasurementSDK.Connection {
+  weak public var delegate: (any MeasurementSDK.ConnectionDelegate)?
+  public var connectionId: Swift.String? {
+    get
+  }
+  public var inherentKeepAlive: Swift.Bool {
+    get
+  }
+  convenience public init(url: Foundation.URL, options: MeasurementSDK.HttpConnectionOptions = HttpConnectionOptions(), logger: any MeasurementSDK.Logger = NullLogger())
+  @objc deinit
+  public func start()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send(data: Foundation.Data, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stop(stopError: (any Swift.Error)? = nil)
+  #endif
+}
+@_hasMissingDesignatedInitializers public class ConnectionTransportDelegate : MeasurementSDK.TransportDelegate {
+  public func transportDidOpen()
+  public func transportDidReceiveData(_ data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func transportDidClose(_ error: (any Swift.Error)?)
+  #endif
+  @objc deinit
+}
+public class HttpConnectionOptions {
+  public var headers: [Swift.String : Swift.String]
+  public var accessTokenProvider: () -> Swift.String?
+  public var httpClientFactory: (MeasurementSDK.HttpConnectionOptions) -> any MeasurementSDK.HttpClientProtocol
+  public var skipNegotiation: Swift.Bool {
+    get
+    @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+    set
+  }
+  public var requestTimeout: Swift.Double
+  public var authenticationChallengeHandler: ((_ session: Foundation.URLSession, _ challenge: Foundation.URLAuthenticationChallenge, _ completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void) -> Swift.Void)?
+  public var callbackQueue: Dispatch.DispatchQueue
+  public init()
+  @objc deinit
+}
+public class HttpResponse {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(statusCode: Swift.Int, contents: Foundation.Data?)
+  #endif
+  @objc deinit
+}
+public class HubConnection {
+  weak public var delegate: (any MeasurementSDK.HubConnectionDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var connectionId: Swift.String? {
+    get
+  }
+  #endif
+  convenience public init(connection: any MeasurementSDK.Connection, hubProtocol: any MeasurementSDK.HubProtocol, logger: any MeasurementSDK.Logger = NullLogger())
+  public init(connection: any MeasurementSDK.Connection, hubProtocol: any MeasurementSDK.HubProtocol, hubConnectionOptions: MeasurementSDK.HubConnectionOptions, logger: any MeasurementSDK.Logger = NullLogger())
+  @objc deinit
+  public func start()
+  public func stop()
+  public func on(method: Swift.String, callback: @escaping (_ argumentExtractor: MeasurementSDK.ArgumentExtractor) throws -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send(method: Swift.String, arguments: [any Swift.Encodable], sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke(method: Swift.String, arguments: [any Swift.Encodable], invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T>(method: Swift.String, arguments: [any Swift.Encodable], resultType: T.Type, invocationDidComplete: @escaping (_ result: T?, _ error: (any Swift.Error)?) -> Swift.Void) where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T>(method: Swift.String, arguments: [any Swift.Encodable], streamItemReceived: @escaping (_ item: T) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T : Swift.Decodable
+  #endif
+  public func cancelStreamInvocation(streamHandle: MeasurementSDK.StreamHandle, cancelDidFail: @escaping (_ error: any Swift.Error) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class ArgumentExtractor {
+  public func getArgument<T>(type: T.Type) throws -> T where T : Swift.Decodable
+  public func hasMoreArgs() -> Swift.Bool
+  @objc deinit
+}
+public class HubConnectionBuilder {
+  public init(url: Foundation.URL)
+  public func withHubProtocol(hubProtocolFactory: @escaping (any MeasurementSDK.Logger) -> any MeasurementSDK.HubProtocol) -> MeasurementSDK.HubConnectionBuilder
+  public func withHttpConnectionOptions(configureHttpOptions: (_ httpConnectionOptions: MeasurementSDK.HttpConnectionOptions) -> Swift.Void) -> MeasurementSDK.HubConnectionBuilder
+  public func withHubConnectionOptions(configureHubConnectionOptions: (_ hubConnectionOptions: MeasurementSDK.HubConnectionOptions) -> Swift.Void) -> MeasurementSDK.HubConnectionBuilder
+  public func withLogging(minLogLevel: MeasurementSDK.LogLevel) -> MeasurementSDK.HubConnectionBuilder
+  public func withLogging(logger: any MeasurementSDK.Logger) -> MeasurementSDK.HubConnectionBuilder
+  public func withLogging(minLogLevel: MeasurementSDK.LogLevel, logger: any MeasurementSDK.Logger) -> MeasurementSDK.HubConnectionBuilder
+  public func withHubConnectionDelegate(delegate: any MeasurementSDK.HubConnectionDelegate) -> MeasurementSDK.HubConnectionBuilder
+  public func withAutoReconnect(reconnectPolicy: any MeasurementSDK.ReconnectPolicy = DefaultReconnectPolicy()) -> MeasurementSDK.HubConnectionBuilder
+  public func withPermittedTransportTypes(_ permittedTransportTypes: MeasurementSDK.TransportType) -> MeasurementSDK.HubConnectionBuilder
+  public func withLegacyHttpConnection() -> MeasurementSDK.HubConnectionBuilder
+  public func build() -> MeasurementSDK.HubConnection
+  @objc deinit
+}
+extension MeasurementSDK.HubConnectionBuilder {
+  public func withJSONHubProtocol() -> MeasurementSDK.HubConnectionBuilder
+}
+public protocol HubConnectionDelegate : AnyObject {
+  func connectionDidOpen(hubConnection: MeasurementSDK.HubConnection)
+  func connectionDidFailToOpen(error: any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func connectionDidClose(error: (any Swift.Error)?)
+  #endif
+  func connectionWillReconnect(error: any Swift.Error)
+  func connectionDidReconnect()
+}
+extension MeasurementSDK.HubConnectionDelegate {
+  public func connectionWillReconnect(error: any Swift.Error)
+  public func connectionDidReconnect()
+}
+extension MeasurementSDK.HubConnection {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke(method: Swift.String, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1>(method: Swift.String, _ arg1: T1, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2>(method: Swift.String, _ arg1: T1, _ arg2: T2, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6, T7>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6, T7, T8>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, _ arg8: T8, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, T8 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<TRes>(method: Swift.String, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, TRes>(method: Swift.String, _ arg1: T1, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6, T7, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func invoke<T1, T2, T3, T4, T5, T6, T7, T8, TRes>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, _ arg8: T8, resultType: TRes.Type, invocationDidComplete: @escaping (_ result: TRes?, _ error: (any Swift.Error)?) -> Swift.Void) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, T8 : Swift.Encodable, TRes : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send(method: Swift.String, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in})
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1>(method: Swift.String, _ arg1: T1, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2>(method: Swift.String, _ arg1: T1, _ arg2: T2, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3, T4>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3, T4, T5>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3, T4, T5, T6>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3, T4, T5, T6, T7>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send<T1, T2, T3, T4, T5, T6, T7, T8>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, _ arg8: T8, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void = {_ in}) where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, T8 : Swift.Encodable
+  #endif
+  public func on(method: Swift.String, callback: @escaping () -> Swift.Void)
+  public func on<T1>(method: Swift.String, callback: @escaping (_ arg1: T1) -> Swift.Void) where T1 : Swift.Decodable
+  public func on<T1, T2>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable
+  public func on<T1, T2, T3>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable
+  public func on<T1, T2, T3, T4>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable, T4 : Swift.Decodable
+  public func on<T1, T2, T3, T4, T5>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable, T4 : Swift.Decodable, T5 : Swift.Decodable
+  public func on<T1, T2, T3, T4, T5, T6>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable, T4 : Swift.Decodable, T5 : Swift.Decodable, T6 : Swift.Decodable
+  public func on<T1, T2, T3, T4, T5, T6, T7>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable, T4 : Swift.Decodable, T5 : Swift.Decodable, T6 : Swift.Decodable, T7 : Swift.Decodable
+  public func on<T1, T2, T3, T4, T5, T6, T7, T8>(method: Swift.String, callback: @escaping (_ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, _ arg8: T8) -> Swift.Void) where T1 : Swift.Decodable, T2 : Swift.Decodable, T3 : Swift.Decodable, T4 : Swift.Decodable, T5 : Swift.Decodable, T6 : Swift.Decodable, T7 : Swift.Decodable, T8 : Swift.Decodable
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<TItemType>(method: Swift.String, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, TItemType>(method: Swift.String, _ arg1: T1, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, T4, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, T4, T5, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, T4, T5, T6, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, T4, T5, T6, T7, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stream<T1, T2, T3, T4, T5, T6, T7, T8, TItemType>(method: Swift.String, _ arg1: T1, _ arg2: T2, _ arg3: T3, _ arg4: T4, _ arg5: T5, _ arg6: T6, _ arg7: T7, _ arg8: T8, streamItemReceived: @escaping (_ item: TItemType) -> Swift.Void, invocationDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void) -> MeasurementSDK.StreamHandle where T1 : Swift.Encodable, T2 : Swift.Encodable, T3 : Swift.Encodable, T4 : Swift.Encodable, T5 : Swift.Encodable, T6 : Swift.Encodable, T7 : Swift.Encodable, T8 : Swift.Encodable, TItemType : Swift.Decodable
+  #endif
+}
+public class HubConnectionOptions {
+  public var keepAliveInterval: Swift.Double?
+  public var callbackQueue: Dispatch.DispatchQueue
+  public init()
+  @objc deinit
+}
+public enum ProtocolType : Swift.Int {
+  case Text
+  case Binary
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol HubProtocol {
+  var name: Swift.String { get }
+  var version: Swift.Int { get }
+  var type: MeasurementSDK.ProtocolType { get }
+  func parseMessages(input: Foundation.Data) throws -> [any MeasurementSDK.HubMessage]
+  func writeMessage(message: any MeasurementSDK.HubMessage) throws -> Foundation.Data
+}
+public enum MessageType : Swift.Int, Swift.Codable {
+  case Invocation
+  case StreamItem
+  case Completion
+  case StreamInvocation
+  case CancelInvocation
+  case Ping
+  case Close
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol HubMessage {
+  var type: MeasurementSDK.MessageType { get }
+}
+@_hasMissingDesignatedInitializers public class ServerInvocationMessage : MeasurementSDK.HubMessage, Swift.Encodable {
+  final public let type: MeasurementSDK.MessageType
+  final public let invocationId: Swift.String?
+  final public let target: Swift.String
+  final public let arguments: [any Swift.Encodable]
+  final public let streamIds: [Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class ClientInvocationMessage : MeasurementSDK.HubMessage, Swift.Decodable {
+  final public let type: MeasurementSDK.MessageType
+  final public let target: Swift.String
+  required public init(from decoder: any Swift.Decoder) throws
+  public func getArgument<T>(type: T.Type) throws -> T where T : Swift.Decodable
+  @objc deinit
+}
+public class StreamItemMessage : MeasurementSDK.HubMessage, Swift.Codable {
+  final public let type: MeasurementSDK.MessageType
+  final public let invocationId: Swift.String
+  required public init(from decoder: any Swift.Decoder) throws
+  public init(invocationId: Swift.String, item: any Swift.Encodable)
+  public func getItem<T>(_ type: T.Type) throws -> T where T : Swift.Decodable
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class CompletionMessage : MeasurementSDK.HubMessage, Swift.Codable {
+  final public let type: MeasurementSDK.MessageType
+  final public let invocationId: Swift.String
+  final public let error: Swift.String?
+  final public let hasResult: Swift.Bool
+  required public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(invocationId: Swift.String, error: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getResult<T>(_ type: T.Type) throws -> T? where T : Swift.Decodable
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class StreamInvocationMessage : MeasurementSDK.HubMessage, Swift.Encodable {
+  final public let type: MeasurementSDK.MessageType
+  final public let invocationId: Swift.String
+  final public let target: Swift.String
+  final public let arguments: [any Swift.Encodable]
+  final public let streamIds: [Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CancelInvocationMessage : MeasurementSDK.HubMessage, Swift.Encodable {
+  final public let type: MeasurementSDK.MessageType
+  final public let invocationId: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class PingMessage : MeasurementSDK.HubMessage, Swift.Encodable {
+  final public let type: MeasurementSDK.MessageType
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class CloseMessage : MeasurementSDK.HubMessage, Swift.Decodable {
+  public var type: MeasurementSDK.MessageType {
+    get
+  }
+  final public let error: Swift.String?
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class JSONHubProtocol : MeasurementSDK.HubProtocol {
+  final public let name: Swift.String
+  final public let version: Swift.Int
+  final public let type: MeasurementSDK.ProtocolType
+  public init(logger: any MeasurementSDK.Logger, encoder: Foundation.JSONEncoder = JSONEncoder(), decoder: Foundation.JSONDecoder = JSONDecoder())
+  public func parseMessages(input: Foundation.Data) throws -> [any MeasurementSDK.HubMessage]
+  public func createHubMessage(payload: Foundation.Data) throws -> any MeasurementSDK.HubMessage
+  public func writeMessage(message: any MeasurementSDK.HubMessage) throws -> Foundation.Data
+  @objc deinit
+}
+public enum LogLevel : Swift.Int {
+  case error
+  case warning
+  case info
+  case debug
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol Logger {
+  func log(logLevel: MeasurementSDK.LogLevel, message: @autoclosure () -> Swift.String)
+}
+extension MeasurementSDK.LogLevel {
+  public func toString() -> Swift.String
+}
+public class PrintLogger : MeasurementSDK.Logger {
+  public init()
+  public func log(logLevel: MeasurementSDK.LogLevel, message: @autoclosure () -> Swift.String)
+  @objc deinit
+}
+public class NullLogger : MeasurementSDK.Logger {
+  public init()
+  public func log(logLevel: MeasurementSDK.LogLevel, message: @autoclosure () -> Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LongPollingTransport : MeasurementSDK.Transport {
+  public var delegate: (any MeasurementSDK.TransportDelegate)?
+  final public let inherentKeepAlive: Swift.Bool
+  public func start(url: Foundation.URL, options: MeasurementSDK.HttpConnectionOptions)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send(data: Foundation.Data, sendDidComplete: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  public func close()
+  @objc deinit
+}
+public struct RetryContext {
+  public let failedAttemptsCount: Swift.Int
+  public let reconnectStartTime: Foundation.Date
+  public let error: any Swift.Error
+}
+public protocol ReconnectPolicy {
+  func nextAttemptInterval(retryContext: MeasurementSDK.RetryContext) -> Dispatch.DispatchTimeInterval
+}
+public class DefaultReconnectPolicy : MeasurementSDK.ReconnectPolicy {
+  public init(retryIntervals: [Dispatch.DispatchTimeInterval] = [.milliseconds(0), .seconds(2), .seconds(10), .seconds(30)])
+  public func nextAttemptInterval(retryContext: MeasurementSDK.RetryContext) -> Dispatch.DispatchTimeInterval
+  @objc deinit
+}
+public enum SignalRError : Swift.Error {
+  case invalidState
+  case webError(statusCode: Swift.Int)
+  case hubInvocationError(message: Swift.String)
+  case hubInvocationCancelled
+  case unknownMessageType
+  case invalidMessage
+  case unsupportedType
+  case serializationError(underlyingError: any Swift.Error)
+  case connectionIsBeingClosed
+  case invalidOperation(message: Swift.String)
+  case protocolViolation(underlyingError: any Swift.Error)
+  case handshakeError(message: Swift.String)
+  case invalidNegotiationResponse(message: Swift.String)
+  case serverClose(message: Swift.String?)
+  case noSupportedTransportAvailable
+  case connectionIsReconnecting
+}
+@_hasMissingDesignatedInitializers public class StreamHandle {
+  @objc deinit
+}
+public enum TransferFormat : Swift.String {
+  case text
+  case binary
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Transport : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any MeasurementSDK.TransportDelegate)? { get set }
+  #endif
+  var inherentKeepAlive: Swift.Bool { get }
+  func start(url: Foundation.URL, options: MeasurementSDK.HttpConnectionOptions)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func send(data: Foundation.Data, sendDidComplete: @escaping (_ error: (any Swift.Error)?) -> Swift.Void)
+  #endif
+  func close()
+}
+public protocol TransportDelegate : AnyObject {
+  func transportDidOpen()
+  func transportDidReceiveData(_ data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func transportDidClose(_ error: (any Swift.Error)?)
+  #endif
+}
+public struct TransportType : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let longPolling: MeasurementSDK.TransportType
+  public static let webSockets: MeasurementSDK.TransportType
+  public static let all: MeasurementSDK.TransportType
+  public typealias ArrayLiteralElement = MeasurementSDK.TransportType
+  public typealias Element = MeasurementSDK.TransportType
+  public typealias RawValue = Swift.Int
+}
+@objc @_hasMissingDesignatedInitializers @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+public class WebsocketsTransport : ObjectiveC.NSObject, MeasurementSDK.Transport, Foundation.URLSessionWebSocketDelegate {
+  public var delegate: (any MeasurementSDK.TransportDelegate)?
+  final public let inherentKeepAlive: Swift.Bool
+  public func start(url: Foundation.URL, options: MeasurementSDK.HttpConnectionOptions)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func send(data: Foundation.Data, sendDidComplete: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  public func close()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
+  #endif
+  @objc deinit
+}
+@objc @objcMembers public class MeasurementConfig : ObjectiveC.NSObject {
+  @objc public var appId: Swift.String
+  @objc public var sdkKey: Swift.String
+  @objc public var measurementDuration: Swift.Int
+  @objc public var minChunkTimeSpan: Swift.Int
+  @objc public var measurementUrl: Swift.String?
+  @objc public var authUrl: Swift.String?
+  public var measurementCategories: [MeasurementSDK.MeasurementCategory]
+  @objc public var enableLog: Swift.Bool
+  @objc public init(appId: Swift.String, sdkKey: Swift.String)
+  @objc deinit
+}
+public struct ClientSdkConfig : Swift.Codable {
+  public let authUrl: Swift.String?
+  public let measurementUrl: Swift.String?
+  public let minMeasurementDuration: Swift.Int?
+  public let maxMeasurementDuration: Swift.Int?
+  public let minChunkTimespan: Swift.Int?
+  public let chunkFrameSpan: Swift.Int?
+  public let minFramesCnt: Swift.Int?
+  public let validation: MeasurementSDK.ValidationConfig?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class ConfigManager : ObjectiveC.NSObject {
+  @objc public static let shared: MeasurementSDK.ConfigManager
+  public var config: MeasurementSDK.ClientSdkConfig? {
+    get
+  }
+  @objc deinit
+}
+public struct ValidationConfig : Swift.Codable {
+  public let unknownError: MeasurementSDK.ValidationRule?
+  public let serviceError: MeasurementSDK.ValidationRule?
+  public let serviceCommunicationError: MeasurementSDK.ValidationRule?
+  public let startClosedMeasurement: MeasurementSDK.ValidationRule?
+  public let startRepeatedly: MeasurementSDK.ValidationRule?
+  public let authenticationFailure: MeasurementSDK.ValidationRule?
+  public let tooLowFps: MeasurementSDK.TooLowFpsRule?
+  public let reportTimeout: MeasurementSDK.ReportTimeoutRule?
+  public let invalidStartFrame: MeasurementSDK.ValidationRule?
+  public let tooSmallImage: MeasurementSDK.TooSmallImageRule?
+  public let faceLost: MeasurementSDK.ValidationRule?
+  public let faceOutOfBoundary: MeasurementSDK.ValidationRule?
+  public let inappropriateDistance: MeasurementSDK.InappropriateDistanceRule?
+  public let yawOutOfRange: MeasurementSDK.YawOutOfRangeRule?
+  public let pitchOutOfRange: MeasurementSDK.PitchOutOfRangeRule?
+  public let faceWobble: MeasurementSDK.FaceWobbleRule?
+  public let resourceFileError: MeasurementSDK.ValidationRule?
+  public let inadequateDataInput: MeasurementSDK.ValidationRule?
+  public let cameraInitializationFailure: MeasurementSDK.ValidationRule?
+  public let dataUploadError: MeasurementSDK.ValidationRule?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ValidationException : Swift.Codable {
+  public let level: Swift.String?
+  public let msg: Swift.String?
+  public let msgCn: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ValidationRule : Swift.Codable {
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TooLowFpsRule : Swift.Codable {
+  public let minFps: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ReportTimeoutRule : Swift.Codable {
+  public let timeout: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TooSmallImageRule : Swift.Codable {
+  public let minWidth: Swift.Int?
+  public let minHeight: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InappropriateDistanceRule : Swift.Codable {
+  public let minRatio: Swift.Double?
+  public let maxRatio: Swift.Double?
+  public let interval: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct YawOutOfRangeRule : Swift.Codable {
+  public let yawAngle: Swift.Double?
+  public let interval: Swift.Int?
+  public let maxFailedTimes: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PitchOutOfRangeRule : Swift.Codable {
+  public let pitchAngle: Swift.Double?
+  public let interval: Swift.Int?
+  public let maxFailedTimes: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FaceWobbleRule : Swift.Codable {
+  public let minOverlappingRatio: Swift.Double?
+  public let interval: Swift.Int?
+  public let maxFailedTimes: Swift.Int?
+  public let exception: MeasurementSDK.ValidationException?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension MeasurementSDK.RecognitionType : Swift.Equatable {}
+extension MeasurementSDK.RecognitionType : Swift.Hashable {}
+extension MeasurementSDK.RecognitionType : Swift.RawRepresentable {}
+extension MeasurementSDK.Environment : Swift.Equatable {}
+extension MeasurementSDK.Environment : Swift.Hashable {}
+extension MeasurementSDK.Environment : Swift.RawRepresentable {}
+extension MeasurementSDK.GDHTTPMethod : Swift.Equatable {}
+extension MeasurementSDK.GDHTTPMethod : Swift.Hashable {}
+extension MeasurementSDK.GDHTTPMethod : Swift.RawRepresentable {}
+extension MeasurementSDK.Path : Swift.Equatable {}
+extension MeasurementSDK.Path : Swift.Hashable {}
+extension MeasurementSDK.Path : Swift.RawRepresentable {}
+extension MeasurementSDK.MeasurementExceptionEnum : Swift.Equatable {}
+extension MeasurementSDK.MeasurementExceptionEnum : Swift.Hashable {}
+extension MeasurementSDK.MeasurementExceptionEnum : Swift.RawRepresentable {}
+extension MeasurementSDK.FaceLandmarkerDelegate : Swift.Equatable {}
+extension MeasurementSDK.FaceLandmarkerDelegate : Swift.Hashable {}
+extension MeasurementSDK.ProtocolType : Swift.Equatable {}
+extension MeasurementSDK.ProtocolType : Swift.Hashable {}
+extension MeasurementSDK.ProtocolType : Swift.RawRepresentable {}
+extension MeasurementSDK.MessageType : Swift.Equatable {}
+extension MeasurementSDK.MessageType : Swift.Hashable {}
+extension MeasurementSDK.MessageType : Swift.RawRepresentable {}
+extension MeasurementSDK.LogLevel : Swift.Equatable {}
+extension MeasurementSDK.LogLevel : Swift.Hashable {}
+extension MeasurementSDK.LogLevel : Swift.RawRepresentable {}
+extension MeasurementSDK.TransferFormat : Swift.Equatable {}
+extension MeasurementSDK.TransferFormat : Swift.Hashable {}
+extension MeasurementSDK.TransferFormat : Swift.RawRepresentable {}

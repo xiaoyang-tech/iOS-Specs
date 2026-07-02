@@ -1,0 +1,11 @@
+framework module MeasurementSDK {
+  umbrella header "MeasurementSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module MeasurementSDK.Swift {
+  header "MeasurementSDK-Swift.h"
+  requires objc
+}
