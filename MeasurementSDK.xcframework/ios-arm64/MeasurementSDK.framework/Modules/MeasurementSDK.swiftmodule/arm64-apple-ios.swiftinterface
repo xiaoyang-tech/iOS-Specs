@@ -1,0 +1,84 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeasurementSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AVFoundation
+import CoreImage
+import CoreMedia
+import CoreMotion
+import CoreVideo
+import Foundation
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @objcMembers open class MeasurementError : ObjectiveC.NSObject, Swift.Decodable {
+  @objc public var code: Swift.Int
+  @objc public var message: Swift.String
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objcMembers public class MeasureResult : Swift.Codable {
+  @objc public func toString() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc open class EnvironmentManager : ObjectiveC.NSObject {
+  @objc public static var authURL: Swift.String {
+    @objc get
+  }
+  @objc public static func configureApp(measurementURL: Swift.String?, authURL: Swift.String?)
+  @objc public static func configureRemote(measurementURL: Swift.String?, authURL: Swift.String?)
+  @objc public static func configure(measurementURL: Swift.String?, authURL: Swift.String?, remoteMeasurementURL: Swift.String?, remoteAuthURL: Swift.String?)
+  @objc public static func setCustomEnvironment(measurementURL: Swift.String, authURL: Swift.String)
+  @objc public static func resetCustomEnvironment()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Environment : Swift.Int {
+  case dev = 0
+  case prod = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func print(_ item: @autoclosure () -> Any, separator: Swift.String = " ", terminator: Swift.String = "\n")
+public func XYLog<T>(_ message: T, file: Swift.String = #file, funcName: Swift.String = #function, lineNum: Swift.Int = #line)
+@objc @_inheritsConvenienceInitializers @objcMembers public class MeasurementSDKVersion : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkBuild: Swift.String {
+    @objc get
+  }
+  @objc public static var sdkFullVersion: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class MeasurementRpc : ObjectiveC.NSObject {
+  public static let standard: MeasurementSDK.MeasurementRpc
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum RecognitionType : Swift.Int {
+  case MNN = 0
+  case MEDIAPIPE = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension MeasurementSDK.Environment : Swift.Equatable {}
+extension MeasurementSDK.Environment : Swift.Hashable {}
+extension MeasurementSDK.Environment : Swift.RawRepresentable {}
+extension MeasurementSDK.RecognitionType : Swift.Equatable {}
+extension MeasurementSDK.RecognitionType : Swift.Hashable {}
+extension MeasurementSDK.RecognitionType : Swift.RawRepresentable {}

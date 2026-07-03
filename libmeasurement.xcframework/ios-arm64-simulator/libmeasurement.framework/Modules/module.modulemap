@@ -1,0 +1,5 @@
+framework module libmeasurement {
+    umbrella header "libmeasurement.h"
+    export *
+    module * { export * }
+}

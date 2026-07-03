@@ -1,0 +1,5419 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MeasurementSDK",
+    "printedName": "MeasurementSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeasurementError",
+        "printedName": "MeasurementError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(py)code",
+            "mangledName": "$s14MeasurementSDK0A5ErrorC4codeSivp",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(im)code",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC4codeSivg",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(im)setCode:",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC4codeSivs",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeasurementSDK0A5ErrorC4codeSivM",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC4codeSivM",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(py)message",
+            "mangledName": "$s14MeasurementSDK0A5ErrorC7messageSSvp",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(im)message",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC7messageSSvg",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(im)setMessage:",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC7messageSSvs",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeasurementSDK0A5ErrorC7messageSSvM",
+                "mangledName": "$s14MeasurementSDK0A5ErrorC7messageSSvM",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasurementError",
+                "printedName": "MeasurementSDK.MeasurementError",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError(im)init",
+            "mangledName": "$s14MeasurementSDK0A5ErrorCACycfc",
+            "moduleName": "MeasurementSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasurementError",
+                "printedName": "MeasurementSDK.MeasurementError",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MeasurementSDK0A5ErrorC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14MeasurementSDK0A5ErrorC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementError",
+        "mangledName": "$s14MeasurementSDK0A5ErrorC",
+        "moduleName": "MeasurementSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeasureResult",
+        "printedName": "MeasureResult",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toString",
+            "printedName": "toString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeasurementSDK13MeasureResultC8toStringSSyF",
+            "mangledName": "$s14MeasurementSDK13MeasureResultC8toStringSSyF",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasureResult",
+                "printedName": "MeasurementSDK.MeasureResult",
+                "usr": "s:14MeasurementSDK13MeasureResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MeasurementSDK13MeasureResultC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14MeasurementSDK13MeasureResultC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeasurementSDK13MeasureResultC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14MeasurementSDK13MeasureResultC6encode2toys7Encoder_p_tKF",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14MeasurementSDK13MeasureResultC",
+        "mangledName": "$s14MeasurementSDK13MeasureResultC",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnvironmentManager",
+        "printedName": "EnvironmentManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authURL",
+            "printedName": "authURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cpy)authURL",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC7authURLSSvpZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)authURL",
+                "mangledName": "$s14MeasurementSDK18EnvironmentManagerC7authURLSSvgZ",
+                "moduleName": "MeasurementSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configureApp",
+            "printedName": "configureApp(measurementURL:authURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)configureAppWithMeasurementURL:authURL:",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC12configureApp14measurementURL04authH0ySSSg_AGtFZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "objc_name": "configureAppWithMeasurementURL:authURL:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureRemote",
+            "printedName": "configureRemote(measurementURL:authURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)configureRemoteWithMeasurementURL:authURL:",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC15configureRemote14measurementURL04authH0ySSSg_AGtFZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "objc_name": "configureRemoteWithMeasurementURL:authURL:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(measurementURL:authURL:remoteMeasurementURL:remoteAuthURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)configureWithMeasurementURL:authURL:remoteMeasurementURL:remoteAuthURL:",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC9configure14measurementURL04authG006remoteaG00i4AuthG0ySSSg_A3ItFZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "objc_name": "configureWithMeasurementURL:authURL:remoteMeasurementURL:remoteAuthURL:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomEnvironment",
+            "printedName": "setCustomEnvironment(measurementURL:authURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)setCustomEnvironmentWithMeasurementURL:authURL:",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC09setCustomC014measurementURL04authH0ySS_SStFZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "objc_name": "setCustomEnvironmentWithMeasurementURL:authURL:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetCustomEnvironment",
+            "printedName": "resetCustomEnvironment()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(cm)resetCustomEnvironment",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerC011resetCustomC0yyFZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EnvironmentManager",
+                "printedName": "MeasurementSDK.EnvironmentManager",
+                "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager(im)init",
+            "mangledName": "$s14MeasurementSDK18EnvironmentManagerCACycfc",
+            "moduleName": "MeasurementSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MeasurementSDK@objc(cs)EnvironmentManager",
+        "mangledName": "$s14MeasurementSDK18EnvironmentManagerC",
+        "moduleName": "MeasurementSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeasurementSDK.Environment.Type) -> MeasurementSDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "MeasurementSDK.Environment",
+                    "usr": "c:@M@MeasurementSDK@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeasurementSDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "MeasurementSDK.Environment",
+                        "usr": "c:@M@MeasurementSDK@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MeasurementSDK@E@Environment@EnvironmentDev",
+            "mangledName": "$s14MeasurementSDK11EnvironmentO3devyA2CmF",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeasurementSDK.Environment.Type) -> MeasurementSDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "MeasurementSDK.Environment",
+                    "usr": "c:@M@MeasurementSDK@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeasurementSDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "MeasurementSDK.Environment",
+                        "usr": "c:@M@MeasurementSDK@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MeasurementSDK@E@Environment@EnvironmentProd",
+            "mangledName": "$s14MeasurementSDK11EnvironmentO4prodyA2CmF",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeasurementSDK.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "MeasurementSDK.Environment",
+                    "usr": "c:@M@MeasurementSDK@E@Environment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MeasurementSDK11EnvironmentO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14MeasurementSDK11EnvironmentO8rawValueACSgSi_tcfc",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MeasurementSDK11EnvironmentO8rawValueSivp",
+            "mangledName": "$s14MeasurementSDK11EnvironmentO8rawValueSivp",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeasurementSDK11EnvironmentO8rawValueSivg",
+                "mangledName": "$s14MeasurementSDK11EnvironmentO8rawValueSivg",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MeasurementSDK@E@Environment",
+        "mangledName": "$s14MeasurementSDK11EnvironmentO",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "print",
+        "printedName": "print(_:separator:terminator:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "() -> Any",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "typeAttributes": [
+              "noescape"
+            ]
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MeasurementSDK5print_9separator10terminatoryypyXK_S2StF",
+        "mangledName": "$s14MeasurementSDK5print_9separator10terminatoryypyXK_S2StF",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "XYLog",
+        "printedName": "XYLog(_:file:funcName:lineNum:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "GenericTypeParam",
+            "printedName": "τ_0_0"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14MeasurementSDK5XYLog_4file8funcName7lineNumyx_S2SSitlF",
+        "mangledName": "$s14MeasurementSDK5XYLog_4file8funcName7lineNumyx_S2SSitlF",
+        "moduleName": "MeasurementSDK",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeasurementSDKVersion",
+        "printedName": "MeasurementSDKVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cpy)sdkVersion",
+            "mangledName": "$s14MeasurementSDK0A10SDKVersionC10sdkVersionSSvpZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cm)sdkVersion",
+                "mangledName": "$s14MeasurementSDK0A10SDKVersionC10sdkVersionSSvgZ",
+                "moduleName": "MeasurementSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cpy)sdkBuild",
+            "mangledName": "$s14MeasurementSDK0A10SDKVersionC8sdkBuildSSvpZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cm)sdkBuild",
+                "mangledName": "$s14MeasurementSDK0A10SDKVersionC8sdkBuildSSvgZ",
+                "moduleName": "MeasurementSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkFullVersion",
+            "printedName": "sdkFullVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cpy)sdkFullVersion",
+            "mangledName": "$s14MeasurementSDK0A10SDKVersionC14sdkFullVersionSSvpZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(cm)sdkFullVersion",
+                "mangledName": "$s14MeasurementSDK0A10SDKVersionC14sdkFullVersionSSvgZ",
+                "moduleName": "MeasurementSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasurementSDKVersion",
+                "printedName": "MeasurementSDK.MeasurementSDKVersion",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion(im)init",
+            "mangledName": "$s14MeasurementSDK0A10SDKVersionCACycfc",
+            "moduleName": "MeasurementSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementSDKVersion",
+        "mangledName": "$s14MeasurementSDK0A10SDKVersionC",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeasurementRpc",
+        "printedName": "MeasurementRpc",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "standard",
+            "printedName": "standard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasurementRpc",
+                "printedName": "MeasurementSDK.MeasurementRpc",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementRpc"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MeasurementSDK0A3RpcC8standardACvpZ",
+            "mangledName": "$s14MeasurementSDK0A3RpcC8standardACvpZ",
+            "moduleName": "MeasurementSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MeasurementRpc",
+                    "printedName": "MeasurementSDK.MeasurementRpc",
+                    "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementRpc"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeasurementSDK0A3RpcC8standardACvgZ",
+                "mangledName": "$s14MeasurementSDK0A3RpcC8standardACvgZ",
+                "moduleName": "MeasurementSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeasurementRpc",
+                "printedName": "MeasurementSDK.MeasurementRpc",
+                "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementRpc"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementRpc(im)init",
+            "mangledName": "$s14MeasurementSDK0A3RpcCACycfc",
+            "moduleName": "MeasurementSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MeasurementSDK@objc(cs)MeasurementRpc",
+        "mangledName": "$s14MeasurementSDK0A3RpcC",
+        "moduleName": "MeasurementSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPipeTasksVision",
+        "printedName": "MediaPipeTasksVision",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecognitionType",
+        "printedName": "RecognitionType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "MNN",
+            "printedName": "MNN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeasurementSDK.RecognitionType.Type) -> MeasurementSDK.RecognitionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecognitionType",
+                    "printedName": "MeasurementSDK.RecognitionType",
+                    "usr": "c:@M@MeasurementSDK@E@RecognitionType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeasurementSDK.RecognitionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecognitionType",
+                        "printedName": "MeasurementSDK.RecognitionType",
+                        "usr": "c:@M@MeasurementSDK@E@RecognitionType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MeasurementSDK@E@RecognitionType@RecognitionTypeMNN",
+            "mangledName": "$s14MeasurementSDK15RecognitionTypeO3MNNyA2CmF",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "MEDIAPIPE",
+            "printedName": "MEDIAPIPE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeasurementSDK.RecognitionType.Type) -> MeasurementSDK.RecognitionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecognitionType",
+                    "printedName": "MeasurementSDK.RecognitionType",
+                    "usr": "c:@M@MeasurementSDK@E@RecognitionType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeasurementSDK.RecognitionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecognitionType",
+                        "printedName": "MeasurementSDK.RecognitionType",
+                        "usr": "c:@M@MeasurementSDK@E@RecognitionType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MeasurementSDK@E@RecognitionType@RecognitionTypeMEDIAPIPE",
+            "mangledName": "$s14MeasurementSDK15RecognitionTypeO9MEDIAPIPEyA2CmF",
+            "moduleName": "MeasurementSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeasurementSDK.RecognitionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecognitionType",
+                    "printedName": "MeasurementSDK.RecognitionType",
+                    "usr": "c:@M@MeasurementSDK@E@RecognitionType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14MeasurementSDK15RecognitionTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14MeasurementSDK15RecognitionTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MeasurementSDK15RecognitionTypeO8rawValueSivp",
+            "mangledName": "$s14MeasurementSDK15RecognitionTypeO8rawValueSivp",
+            "moduleName": "MeasurementSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeasurementSDK15RecognitionTypeO8rawValueSivg",
+                "mangledName": "$s14MeasurementSDK15RecognitionTypeO8rawValueSivg",
+                "moduleName": "MeasurementSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MeasurementSDK@E@RecognitionType",
+        "mangledName": "$s14MeasurementSDK15RecognitionTypeO",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeasurementSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/DeviationAngle.swift",
+      "kind": "FloatLiteral",
+      "offset": 164,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/DeviationAngle.swift",
+      "kind": "FloatLiteral",
+      "offset": 199,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/DeviationAngle.swift",
+      "kind": "FloatLiteral",
+      "offset": 233,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ImageUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 201,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ImageUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 208,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ImageUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ImageUtil.swift",
+      "kind": "FloatLiteral",
+      "offset": 540,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ImageUtil.swift",
+      "kind": "FloatLiteral",
+      "offset": 4293,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 716,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 799,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1007,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1176,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1521,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/Nv21Util.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1534,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ValidationUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10843,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/Frame.swift",
+      "kind": "IntegerLiteral",
+      "offset": 719,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/Frame.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1190,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 212,
+      "length": 4,
+      "value": "4100"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 248,
+      "length": 4,
+      "value": "4101"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 274,
+      "length": 4,
+      "value": "4102"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 302,
+      "length": 4,
+      "value": "4103"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 4,
+      "value": "4104"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 374,
+      "length": 4,
+      "value": "4105"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 409,
+      "length": 4,
+      "value": "4106"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 444,
+      "length": 4,
+      "value": "4107"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 476,
+      "length": 4,
+      "value": "4108"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 4,
+      "value": "4109"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 538,
+      "length": 4,
+      "value": "4110"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 567,
+      "length": 4,
+      "value": "4111"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 603,
+      "length": 4,
+      "value": "4112"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 634,
+      "length": 4,
+      "value": "4113"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 663,
+      "length": 4,
+      "value": "4114"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementExceptionEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 711,
+      "length": 4,
+      "value": "4115"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 323,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementModel.swift",
+      "kind": "FloatLiteral",
+      "offset": 350,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 396,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasurementModel.swift",
+      "kind": "StringLiteral",
+      "offset": 423,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 915,
+      "length": 19,
+      "value": "4446368434718866609"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "StringLiteral",
+      "offset": 967,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 994,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1019,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1043,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1072,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1105,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1139,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1184,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1221,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1252,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1281,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1308,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1336,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/MeasureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1369,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/TokenModel.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/TokenModel.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 12,
+      "value": "\"expires_in\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/TokenModel.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 12,
+      "value": "\"token_type\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Model\/TokenModel.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Public\/XYPublicImplementations.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 9,
+      "value": "\"xy.core\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Public\/XYPublicImplementations.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 19,
+      "value": "\"xy.delegateBridge\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Public\/XYPublicImplementations.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 13,
+      "value": "\"xy.delegate\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 416,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 492,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 37,
+      "value": "\"com.xy.measurement.chunk.dispatcher\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "Array",
+      "offset": 775,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "Array",
+      "offset": 827,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/ChunkDispatcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 859,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 121,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 155,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 208,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 239,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 268,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 300,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 346,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 425,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 460,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 549,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Array",
+      "offset": 731,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 876,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 921,
+      "length": 4,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1066,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "FloatLiteral",
+      "offset": 1353,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1411,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1442,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1472,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Dictionary",
+      "offset": 1516,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Array",
+      "offset": 1563,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Dictionary",
+      "offset": 1620,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1658,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Dictionary",
+      "offset": 2176,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "Dictionary",
+      "offset": 2226,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2292,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2332,
+      "length": 4,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2377,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2406,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/FeatureExtractor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3235,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 209,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 257,
+      "length": 4,
+      "value": "3001"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 4,
+      "value": "3002"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 330,
+      "length": 4,
+      "value": "3003"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 4,
+      "value": "3004"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 4,
+      "value": "3005"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 4,
+      "value": "3006"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 4,
+      "value": "3007"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 526,
+      "length": 4,
+      "value": "3008"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 561,
+      "length": 4,
+      "value": "3009"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 592,
+      "length": 4,
+      "value": "3010"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 647,
+      "length": 4,
+      "value": "3011"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 682,
+      "length": 4,
+      "value": "3012"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 744,
+      "length": 4,
+      "value": "3013"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 776,
+      "length": 4,
+      "value": "3018"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 810,
+      "length": 4,
+      "value": "3019"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 866,
+      "length": 4,
+      "value": "3014"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 899,
+      "length": 4,
+      "value": "3015"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 4,
+      "value": "3016"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1012,
+      "length": 4,
+      "value": "3017"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1090,
+      "length": 4,
+      "value": "3020"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1134,
+      "length": 4,
+      "value": "3021"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1176,
+      "length": 4,
+      "value": "3022"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1221,
+      "length": 4,
+      "value": "3023"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1287,
+      "length": 4,
+      "value": "3024"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 4,
+      "value": "3025"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1358,
+      "length": 4,
+      "value": "3026"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Engine\/SignalProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1395,
+      "length": 4,
+      "value": "3027"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/BuildConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 158,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 176,
+      "length": 16,
+      "value": "\"IOSDemoMeasure\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 9,
+      "value": "\"premium\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 326,
+      "length": 5,
+      "value": "15000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 388,
+      "length": 5,
+      "value": "30000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 4,
+      "value": "6000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 497,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Constant\/StringConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 552,
+      "length": 3,
+      "value": "257"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 766,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 813,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 989,
+      "length": 3,
+      "value": "127"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 993,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1006,
+      "length": 3,
+      "value": "139"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1010,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1024,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1093,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1096,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1110,
+      "length": 3,
+      "value": "181"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1114,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1127,
+      "length": 3,
+      "value": "203"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1131,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1145,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1213,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1216,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1230,
+      "length": 3,
+      "value": "181"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1234,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1247,
+      "length": 3,
+      "value": "203"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1251,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1265,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1330,
+      "length": 3,
+      "value": "279"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1334,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1348,
+      "length": 3,
+      "value": "171"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1352,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1365,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1375,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1439,
+      "length": 3,
+      "value": "279"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1443,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1457,
+      "length": 3,
+      "value": "171"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1461,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1484,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1545,
+      "length": 3,
+      "value": "176"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1549,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1563,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1572,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1575,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1589,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1631,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1691,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1752,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/DefaultConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1809,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/EnvironmentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 54,
+      "value": "\"https:\/\/measurement-auth.xymind.cn\/connect\/sdk\/token\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/EnvironmentManager.swift",
+      "kind": "StringLiteral",
+      "offset": 552,
+      "length": 58,
+      "value": "\"https:\/\/measurement-health.xymind.cn\/measurement\/feature\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 201,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2782,
+      "length": 90,
+      "value": "\"https:\/\/xiaoyang-measurement.oss-cn-shanghai.aliyuncs.com\/resources\/ClientSdkConfig.json\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2914,
+      "length": 20,
+      "value": "\"\/connect\/sdk\/token\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2959,
+      "length": 43,
+      "value": "\"\/measurement\/negotiate?negotiateVersion=1\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 3049,
+      "length": 35,
+      "value": "\"\/admin\/api\/License\/device-license\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 3105,
+      "length": 44,
+      "value": "\"\/message\/api\/SystemSetting\/device-settings\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 3207,
+      "length": 33,
+      "value": "\"\/measurement\/api\/Feature\/upload\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/NetWork\/UrlConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 3263,
+      "length": 30,
+      "value": "\"\/measurement\/api\/Profile\/get\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/InferenceConfigurationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 961,
+      "length": 17,
+      "value": "\"face_landmarker\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/InferenceConfigurationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 995,
+      "length": 6,
+      "value": "\"task\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MediaPipe\/InferenceConfigurationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1815,
+      "length": 45,
+      "value": "\"com.google.mediapipe.inferenceConfigChanged\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 25,
+      "value": "\"com.xy.mediapipe.detect\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 504,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 33,
+      "value": "\"com.xy.mediapipe.callback.queue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 726,
+      "length": 56,
+      "value": "\"com.google.mediapipe.detect.faceLandmarkerServiceQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 895,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 945,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 976,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1025,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1185,
+      "length": 4,
+      "value": "1500"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MMFaceDetector.swift",
+      "kind": "Dictionary",
+      "offset": 1249,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Log\/MyLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Log\/MyLog.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Log\/MyLog.swift",
+      "kind": "StringLiteral",
+      "offset": 405,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 7,
+      "value": "\"1.0.1\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 5,
+      "value": "\"1.1\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 704,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 29,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementSDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 781,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 834,
+      "length": 5,
+      "value": "-1002"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 968,
+      "length": 4,
+      "value": "4205"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1147,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "StringLiteral",
+      "offset": 1252,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1488,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1949,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementRpc.swift",
+      "kind": "StringLiteral",
+      "offset": 12756,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 26,
+      "value": "\"com.xy.measurement.state\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 832,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 869,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1226,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1458,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1516,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1607,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1649,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1693,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1735,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1816,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2650,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2716,
+      "length": 55,
+      "value": "\"com.google.mediapipe.cameraController.backgroundQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2848,
+      "length": 66,
+      "value": "\"com.google.mediapipe.cameraController.faceLandmarkerServiceQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5537,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5663,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5694,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5930,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6300,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 6952,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7332,
+      "length": 30,
+      "value": "\"com.xy.measurement.extractor\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7737,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7972,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22652,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Facelandmarker\/Services\/CameraFeedService.swift",
+      "kind": "StringLiteral",
+      "offset": 2498,
+      "length": 53,
+      "value": "\"com.google.mediapipe.CameraFeedService.sessionQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Facelandmarker\/Services\/CameraFeedService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2792,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementConfig.swift",
+      "kind": "Array",
+      "offset": 1299,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/MeasurementConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1445,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/LinkedBlockingQueue.swift",
+      "kind": "Array",
+      "offset": 177,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/LinkedBlockingQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 37,
+      "value": "\"com.linkedBlockingQueue.accessQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/LinkedBlockingQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/LinkedBlockingQueue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 456,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 19,
+      "value": "\"RpcTimeoutHandler\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 276,
+      "length": 6,
+      "value": "0x1000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 61,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 598,
+      "length": 1,
+      "value": "\": Start listening for timeout tasks\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 786,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/RpcTimeoutHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 801,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/ThreadPoolManger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Threadutils\/ThreadPoolManger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 511,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 9,
+      "value": "\"initial\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 12,
+      "value": "\"connecting\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 11,
+      "value": "\"connected\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 982,
+      "length": 9,
+      "value": "\"stopped\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnection.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8165,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnectionOptions.swift",
+      "kind": "Dictionary",
+      "offset": 404,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnectionOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1539,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnectionOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1667,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HttpConnectionOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 2011,
+      "length": 34,
+      "value": "\"SignalR.connection.callbackQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubConnection.swift",
+      "kind": "IntegerLiteral",
+      "offset": 544,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubConnection.swift",
+      "kind": "BooleanLiteral",
+      "offset": 804,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubConnectionBuilder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 932,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubConnectionOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 324,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 214,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 225,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 528,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 552,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 576,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 606,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 636,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 654,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/HubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 673,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/JSONHubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 4,
+      "value": "0x1e"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/JSONHubProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/JSONHubProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 426,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/JSONHubProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 2872,
+      "length": 38,
+      "value": "\"Getting messageType failed: \""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/JSONHubProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 2909,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 226,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 244,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/Logger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/LongPollingTransport.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 32,
+      "value": "\"LongPollingTransportCloseQueue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/LongPollingTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 364,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/LongPollingTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/LongPollingTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 431,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/LongPollingTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 582,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 28,
+      "value": "\"SignalR.reconnection.queue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "IntegerLiteral",
+      "offset": 585,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 14,
+      "value": "\"disconnected\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 10,
+      "value": "\"starting\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 14,
+      "value": "\"reconnecting\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 9,
+      "value": "\"running\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectableConnection.swift",
+      "kind": "StringLiteral",
+      "offset": 849,
+      "length": 10,
+      "value": "\"stopping\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1751,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1764,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1777,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/ReconnectPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1791,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransferFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 6,
+      "value": "\"Text\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransferFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 8,
+      "value": "\"Binary\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 377,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 438,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 522,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/TransportType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 527,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/WebsocketsTransport.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 34,
+      "value": "\"SignalR.webSocketTransport.queue\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/WebsocketsTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 571,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/SignalRClient\/WebsocketsTransport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 657,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 524,
+      "length": 10,
+      "value": "\"auth_url\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 565,
+      "length": 17,
+      "value": "\"measurement_url\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 622,
+      "length": 26,
+      "value": "\"min_measurement_duration\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 687,
+      "length": 26,
+      "value": "\"max_measurement_duration\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 747,
+      "length": 20,
+      "value": "\"min_chunk_timespan\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 798,
+      "length": 18,
+      "value": "\"chunk_frame_span\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ClientSdkConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 16,
+      "value": "\"min_frames_cnt\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Enums\/RecognitionType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 164,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Enums\/RecognitionType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 187,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Enums\/ServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 9,
+      "value": "\"premium\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/Enums\/ServiceType.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 20,
+      "value": "\"client_credentials\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1213,
+      "length": 14,
+      "value": "\"UnknownError\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
+      "length": 14,
+      "value": "\"ServiceError\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1312,
+      "length": 27,
+      "value": "\"ServiceCommunicationError\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1379,
+      "length": 24,
+      "value": "\"StartClosedMeasurement\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1435,
+      "length": 17,
+      "value": "\"StartRepeatedly\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1491,
+      "length": 23,
+      "value": "\"AuthenticationFailure\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1541,
+      "length": 11,
+      "value": "\"TooLowFps\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1583,
+      "length": 15,
+      "value": "\"ReportTimeout\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1633,
+      "length": 19,
+      "value": "\"InvalidStartFrame\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1683,
+      "length": 15,
+      "value": "\"TooSmallImage\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1724,
+      "length": 10,
+      "value": "\"FaceLost\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1769,
+      "length": 19,
+      "value": "\"FaceOutOfBoundary\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1827,
+      "length": 23,
+      "value": "\"InappropriateDistance\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1881,
+      "length": 15,
+      "value": "\"YawOutOfRange\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1929,
+      "length": 17,
+      "value": "\"PitchOutOfRange\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1974,
+      "length": 12,
+      "value": "\"FaceWobble\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2021,
+      "length": 19,
+      "value": "\"ResourceFileError\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2077,
+      "length": 21,
+      "value": "\"InadequateDataInput\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2143,
+      "length": 29,
+      "value": "\"CameraInitializationFailure\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2205,
+      "length": 17,
+      "value": "\"DataUploadError\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2462,
+      "length": 8,
+      "value": "\"msg_cn\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2754,
+      "length": 9,
+      "value": "\"min_fps\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3164,
+      "length": 11,
+      "value": "\"min_width\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3202,
+      "length": 12,
+      "value": "\"min_height\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3533,
+      "length": 11,
+      "value": "\"min_ratio\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3570,
+      "length": 11,
+      "value": "\"max_ratio\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3909,
+      "length": 11,
+      "value": "\"yaw_angle\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3975,
+      "length": 18,
+      "value": "\"max_failed_times\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4307,
+      "length": 13,
+      "value": "\"pitch_angle\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4375,
+      "length": 18,
+      "value": "\"max_failed_times\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4714,
+      "length": 23,
+      "value": "\"min_overlapping_ratio\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4792,
+      "length": 18,
+      "value": "\"max_failed_times\""
+    }
+  ]
+}
