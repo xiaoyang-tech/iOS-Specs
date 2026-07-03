@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author = { 'MeasurementSDK' => 'https://codeup.aliyun.com/xytech/measurement/docs/blob/master/docs/sdk/ios.md' }
 
 
-  s.source = { :git => 'git@github.com:xiaoyang-tech/iOS-Specs.git', :tag => 'v1.0.0' }
+  s.source = { :git => 'https://github.com/xiaoyang-tech/iOS-Specs.git', :tag => 'v1.0.0' }
 
   s.platform = :ios, '14.0'
   s.requires_arc = true
