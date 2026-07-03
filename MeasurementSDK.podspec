@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author = { 'MeasurementSDK' => 'https://codeup.aliyun.com/xytech/measurement/docs/blob/master/docs/sdk/ios.md' }
 
 
-  s.source = { :git => 'https://github.com/xiaoyang-tech/iOS-Specs.git', :tag => 'v1.0.0' }
+  s.source = { :git => 'https://github.com/xiaoyang-tech/iOS-Specs.git', :tag => "v#{s.version}" }
 
   s.platform = :ios, '14.0'
   s.requires_arc = true
@@ -26,7 +26,9 @@ Pod::Spec.new do |s|
   s.preserve_paths = [
     'MeasurementSDK.xcframework',
     'libmeasurement.xcframework',
-    'measurementSDK.bundle'
+    'measurementSDK.bundle',
+    'Support/MeasurementSDK-Bridging-Header.h',
+    'Support/MeasurementSDK-SwiftBridge.h'
   ]
 
   s.frameworks = [
@@ -68,6 +70,7 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = {
     'FRAMEWORK_SEARCH_PATHS' => "$(inherited) #{framework_slices}",
     'HEADER_SEARCH_PATHS' => "$(inherited) #{header_paths}",
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1',
     'SWIFT_ENABLE_EXPLICIT_MODULES' => 'NO',
     'OTHER_SWIFT_FLAGS' => '$(inherited) -auto-bridging-header-chaining',
   }

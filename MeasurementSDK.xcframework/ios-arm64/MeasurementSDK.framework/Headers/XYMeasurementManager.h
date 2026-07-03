@@ -9,8 +9,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
-#import <MeasurementSDK/XYMeasurementConfig.h>
-#import <MeasurementSDK/XYMeasurementDelegate.h>
+#import "XYMeasurementConfig.h"
+#import "XYMeasurementDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
