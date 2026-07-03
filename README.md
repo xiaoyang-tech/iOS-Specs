@@ -19,7 +19,7 @@ URL in `MeasurementSDK.podspec`, tag the release, then reference the pod from an
 app:
 
 
-pod 'MeasurementSDK', :git => 'https://codeup.aliyun.com/xytech/measurement/ios-specs.git', :tag => 'v1.0.0'
+pod 'MeasurementSDK', :git => 'git@github.com:xiaoyang-tech/iOS-Specs.git', :tag => 'v1.0.0'
 
 The podspec automatically installs:
 
