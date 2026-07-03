@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.libraries = 'c++'
 
   s.dependency 'MediaPipeTasksVision', '~> 0.10.14'
-  s.dependency 'Protobuf'
+  s.dependency 'Protobuf', '3.29.6'
   # s.dependency 'OpenCV'
 
 
