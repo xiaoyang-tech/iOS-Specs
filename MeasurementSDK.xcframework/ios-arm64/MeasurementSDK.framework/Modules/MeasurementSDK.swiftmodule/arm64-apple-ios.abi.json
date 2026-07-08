@@ -2947,7 +2947,7 @@
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/util\/ValidationUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 10843,
+      "offset": 11548,
       "length": 4,
       "value": "true"
     },
@@ -5362,56 +5362,63 @@
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3533,
+      "offset": 3672,
       "length": 11,
       "value": "\"min_ratio\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3570,
+      "offset": 3709,
       "length": 11,
       "value": "\"max_ratio\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3909,
+      "offset": 3775,
+      "length": 18,
+      "value": "\"max_failed_times\""
+    },
+    {
+      "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4098,
       "length": 11,
       "value": "\"yaw_angle\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3975,
+      "offset": 4164,
       "length": 18,
       "value": "\"max_failed_times\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4307,
+      "offset": 4496,
       "length": 13,
       "value": "\"pitch_angle\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4375,
+      "offset": 4564,
       "length": 18,
       "value": "\"max_failed_times\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4714,
+      "offset": 4903,
       "length": 23,
       "value": "\"min_overlapping_ratio\""
     },
     {
       "filePath": "\/Users\/dck\/Downloads\/MeasurementSDK2\/MeasurementSDK\/RemoteConfig\/ValidationConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4792,
+      "offset": 4981,
       "length": 18,
       "value": "\"max_failed_times\""
     }

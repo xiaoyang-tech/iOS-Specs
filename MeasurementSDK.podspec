@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MeasurementSDK'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = 'Private binary iOS measurement SDK.'
   s.description = 'A private binary iOS SDK distributed through CocoaPods with its runtime dependencies and model resources.'
   s.homepage = 'https://codeup.aliyun.com/xytech/measurement/docs/blob/master/docs/sdk/ios.md'
